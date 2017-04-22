@@ -1,0 +1,12 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+a#blinkist_btn{
+    border-color: #2CE080;
+    background-color: #2CE080;
+    color: #FFF;
+    font-size: 15px;
+}
+a#blinkist_btn:hover{
+    background-color: #22C870;
+}

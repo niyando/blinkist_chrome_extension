@@ -1,0 +1,25 @@
+{
+  "name": "Blinkist",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Go to blinkist version of books from Goodreads",
+  "homepage_url": "https://www.blinkist.com/",
+  "icons": {
+    "16": "icons/blinkist_ico.png",
+    "48": "icons/blinkist_ico.png",
+    "128": "icons/blinkist_ico.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.goodreads.com/book/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js","src/inject/inject.js"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    }
+  ]
+}
