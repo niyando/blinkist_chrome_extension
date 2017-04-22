@@ -7,10 +7,18 @@ chrome.extension.sendMessage({}, function(response) {
 		// ----------------------------------------------------------
 		// This part of the script triggers when page is done loading
     var pages = {
-      "goodreads":{"title":"h1#bookTitle", "container":"div#imagecol"}
+      "www.goodreads.com":{"title":"h1#bookTitle", "container":"div#imagecol"},
+      "www.amazon.com":{"title":"span#productTitle", "container":"div#MediaMatrix"}
     };
 
-    var page_type = pages["goodreads"]; 
+    var domain_name = window.location.hostname
+    
+    if (domain_name == "www.amazon.com"){
+      var category = $("select#searchDropdownBox")[0].value;
+      if(category != "search-alias=stripbooks"){return false;}
+    }
+
+    var page_type = pages[domain_name];
 
 		var book_title = $(page_type.title).text().trim();
 

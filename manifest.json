@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.goodreads.com/book/*"
+        "https://www.goodreads.com/book/*",
+        "https://www.amazon.com/*"
       ],
       "js": [
         "js/jquery/jquery.min.js","src/inject/inject.js"
