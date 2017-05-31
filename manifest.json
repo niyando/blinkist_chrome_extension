@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Go to blinkist version of books from Goodreads.com and Amazon.com",
-  "homepage_url": "https://www.blinkist.com/",
+  "author": "Nirav Gandhi",
+  "homepage_url": "http://www.niyando.com/",
   "icons": {
     "16": "icons/blinkist_ico.png",
     "48": "icons/blinkist_ico.png",
