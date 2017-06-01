@@ -1,14 +1,14 @@
 {
-  "name": "Blinkist",
-  "version": "0.0.1",
+  "name": "Blinkist (Unofficial)",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Go to blinkist version of books from Goodreads.com and Amazon.com",
   "author": "Nirav Gandhi",
   "homepage_url": "http://www.niyando.com/",
   "icons": {
-    "16": "icons/blinkist_ico.png",
-    "48": "icons/blinkist_ico.png",
-    "128": "icons/blinkist_ico.png"
+    "16": "icons/f22_16.png",
+    "48": "icons/f22_48.png",
+    "128": "icons/f22_128.png"
   },
   "content_scripts": [
     {
